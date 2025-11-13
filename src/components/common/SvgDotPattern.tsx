@@ -1,5 +1,5 @@
 const classes = {
-  svg: 'hidden fixed transform right-0 top-5 z-0 xl:block',
+  svg: 'hidden fixed transform right-0 top-[5%] z-0 xl:block',
 };
 
 export default function SvgDotPattern({}) {

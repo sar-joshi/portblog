@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import html from 'remark-html';
-import remark from 'remark';
+import { remark } from 'remark';
 import prism from 'remark-prism';
 
 const postsDirectory = path.join(process.cwd(), 'src/_posts');

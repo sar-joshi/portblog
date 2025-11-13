@@ -1,6 +1,6 @@
 const classes = {
   wrapper: 'block pt-12 md:flex',
-  title: 'pb-6 md:w-full md:max-w-150 md:p-0',
+  title: 'pb-6 md:w-full md:max-w-[150px] md:p-0',
   heading:
     'font-xs font-normal tracking-widest text-sm text-gray-700 leading-normal uppercase dark:text-white',
   content:
