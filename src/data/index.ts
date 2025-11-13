@@ -25,66 +25,78 @@ export const projects: IProject[] = [
 
 export const experience: IExperience[] = [
   {
-    name: 'Drive Yello PTY LTD',
-    description: 'Fullstack Engineer, April 2021 - Present',
-    link: 'https://www.linkedin.com/in/joshisarthak/',
-  },
-  {
-    name: 'Core Intelligence Technologies Pty. Ltd.',
-    description: 'Lead Fullstack Web Developer, December 2019 - March 2021',
+    name: 'Sherpa Delivery Pty Ltd, Sydney & Melbourne',
+    description: 'Full Stack Engineer, May 2025 - October 2025',
     link: 'https://www.linkedin.com/in/joshisarthak/',
     responsibilities: [
-      'Building API-driven microservices that handles response from multiple ML API, processing the output.',
-      'Creating message queue system to handle multiple asynchronous ML tasks using technologies such as Celery and Rabbitmq/Redis.',
-      'Maintaining the code standards, it’s performance, implementing design patterns on the basis of nature of work.',
-      'Implementing Test-driven development using Docker, Docker-compose, Flask and Pytest.',
-      'Using Atlassian’s Bitbucket for maintaining daily code commits and pushes and Microsoft’s Azure DevOps services like Azure Pipelines for continuous integration and continuous development.',
-      'Using MYSQL database and python’s SQLAlchemy for ORM with databases.',
-      'Documenting RESTful API with Swagger.',
-      'Using Gunicorn server and Nginx for serving python microservices and load balancing and reverse-proxying the server respectively.',
-      'Mentoring couple of junior developers and training them to work remotely and independently.',
-      'Writing both functional or class-based React Components.',
-      'Using state management tools like Flux, React-Redux or React’s Context API.',
-      'Maintaining reliable communication using socket.io with Flask-APIs along with end-to-end authentication.',
-      'Making user-friendly interfaces and responsive components.',
-      'Unit Testing react code with testing-library and jest.',
+      'Worked on the successful integration of Drive Yello with the Sherpa Delivery platform.',
+      'Executed the systematic migration of all active clients, delivery data and configurations, ensuring zero downtime and data integrity.',
+      'Built and maintained applications based on Ruby and Ruby on Rails (RoR) framework.',
+      'Enhanced end-user experience by providing real-time feedback using Hotwire and Stimulus within RoR.',
+      'Took ownership of building AI-driven features such as Document Verification,  Face Recognition and Interview Reviewer, leveraging Google Document AI, Vision AI and AWS Rekognition, and OpenAI’s Models.',
+      'Trained and fine-tuned Google Document AI Custom Extractor Processors to achieve high accuracy using pretrained foundation models.',
+      'Optimised the usage of AI tools to reduce operational costs and improve cost-effectiveness.',
+      'Code reviews, CICD workflow automation, Unit and end-to-end testing.',
+      'Worked with cross-functional teams - including designers, product owners and marketing.',
+      'GCP to some extent - including GKE, managing sensitive data in Secret Manager, observing logs in Logs Explorer and custom SQL queries with Looker Studio for data analysis.',
+    ],
+  },
+  {
+    name: 'Drive Yello Pty Ltd, Sydney & Melbourne',
+    description: 'Full Stack Engineer, April 2021 - October 2025',
+    link: 'https://www.linkedin.com/in/joshisarthak/',
+    responsibilities: [
+      'Built distributed **microservices** across Node.js, PHP and Go, applying secure coding practices and design patterns to ensure system resilience and **ISO 27001 compliance.**',
+      'Developed and integrated scalable **event-driven architecture** leveraging PubNub (Pub/Sub), AWS SNS, and SQS to enable asynchronous communication and system decoupling.',
+      'Implemented caching and ETL data pipelines to support near real-time courier performance dashboards and earnings insights.',
+      'Continuous improvement through Agile collaboration — fostering a culture of shared responsibility, transparency, and technical excellence.',
+      'Designed scalable application and infrastructure architecture to support data-intensive operations.',
+      'Worked with internal teams such as design, product and marketing, and external **enterprise** clients to facilitate API integrations.',
+      '**CI/CD** using **GitHub** Actions, Unit Tests, Performance Testing, Functional Testing and API Testing ',
+      'Managed and executed the seamless migration of MongoDB, MySQL, and **Kubernetes** to their stable versions.',
+      'Designed and built a scalable logging solution to capture all incoming application requests.',
+      'Utilised AWS S3 for cost-effective log storage and integrated AWS Kinesis and Athena to enable powerful, on-demand log querying and analysis.',
+    ],
+  },
+  {
+    name: 'Core Intelligence Technologies Pty Ltd, Sydney',
+    description: 'Lead Full Stack Developer, December 2019 - March 2021',
+    link: 'https://www.linkedin.com/in/joshisarthak/',
+    responsibilities: [
+      'Developed API-driven microservices with security in mind.',
+      'Architected and developed web applications from scratch using Python and Flask.',
+      'Implemented a distributed task queue using Celery and RabbitMQ to manage asynchronous operations, significantly improving application performance and user experience.',
+      'Guiding junior developers - training them to work remotely and idependently.',
+      'Hand-on experience with React.JS and Redux state management.',
+      'Contributed to code reviews to maintain code quality and ensure best practices.',
     ],
     achivements: [],
   },
   {
-    name: 'Cotiviti Nepal Pvt. Ltd. (formerly Verscend Nepal)',
+    name: 'Verscend Technologies, Kathmandu',
     description: 'Software Engineer, September 2016 - October 2018',
     link: 'https://www.linkedin.com/in/joshisarthak/',
     responsibilities: [
-      'Development/support/maintenance/testing of Java EE applications',
-      'CI/CD of in-house applications with Bamboo and Crucible',
-      "Issuing tickets to fix bugs in programs using Atlassian's JIRA tool.",
-      'Oracle Data Integrator (ETL tool) integration with existing Java applications to manage and maintain data integration processes.',
-      'Designed, created and implemented automated report subscription system for different departments using Java, Corn Job and MicroStrategy.',
-      'Utilized and integrated SVN Kit tool in Java EE applications',
-      'Building a Java application with JSF framework',
-      'Provided system maintenance and support procedures for log files update, database tables and stored procedures (PL/SQL)',
+      'Developed and maintained Java applications, from building new features to testing and fixing bugs.',
+      'Contributed to code reviews to maintain code quality and ensure best practices.',
+      'Created an automated reporting system using Java that sent regular reports to different departments, saving them manual effort.Worked on integrating data from different sources into the main applications using an ETL tool (Oracle Data Integrator).',
+      'Developed and maintained Java applications for the U.S. healthcare industry, handling the full development lifecycle from new feature creation to bug fixing, while ensuring all work was compliant with HIPAA standards.',
+      'Worked effectively in an Agile/Scrum team with members in both Nepal and the US, using version control tools like Subversion/Git to collaborate on code.',
     ],
-    achivements: [
-      'Learned to work in an agile environment with local (Nepal) team and remote (US) team.',
-      'Developed enterprise in-house applications using SCRUM methodology.',
-      'Data analysis, data manipulation, data scrubbing, data cleaning',
-      "Learned about CI/CD process with Atlassian's Bamboo tool",
-      'Subversion/Git Version Control System (Trunk, branches and tags)',
-      'Code review of team members with Crucible tool',
-      'Analysed/studied existing code to determine the functionality of the domain',
-    ],
+    achivements: [],
   },
   {
-    name: 'Verisk Nepal Pvt. Ltd.',
-    description: 'Internship (Software Engineer), July 2016 - September 2016',
+    name: 'nKudos Pvt Ltd, Kathmandu',
+    description: 'Associate ASP.NET Developer (part-time), July 2016 - September 2016',
     link: 'https://www.linkedin.com/in/joshisarthak/',
     responsibilities: [
-      'Building CRUD Java application with JSP, JSF, SPRING frameworks',
-      'Analysing existing projects, testing features and bug fixing',
-      'Learning Linux commands, shell scripting',
-      'Creating table, views, schemas, procedure in Oracle Database',
-      'Working in a team; completing the task in a given time frame',
+      'Worked on existing C# ASP.NET MVC web applications, implementing new features and fixing bugs.',
+      'Developed and maintained controllers, views, and Razor-based components, ensuring clean separation of concerns under the MVC pattern.',
+      'Designed and optimized SQL queries, joins, and stored procedures in Microsoft SQL Server to support backend operations.',
+      'Performed code reviews, debugging, and regression testing to maintain application quality and reliability.',
+      'Maintained and refactored legacy code to improve readability and performance.',
+      'Documented technical changes and assisted in improving existing workflows for maintainability.',
+      'Collaborated with the product team, senior developers and QA team.',
     ],
     achivements: [],
   },
@@ -92,26 +104,46 @@ export const experience: IExperience[] = [
 
 export const skills: ISkill[] = [
   {
-    name: 'Languages & Frameworks',
+    name: 'Backend & Technologies',
     description:
-      'Python - Flask (familiar), Java - JSF (prior-experience), JavaScript, ES6+ (familiar) - Node.js, Express.js, React.js - Redux - RTK (familiar), Next.js, PHP - Laravel (basics)',
+      'RESTful APIs, Microservices, Unit/E2E Testing, CICD, Git, GitHub Actions, WebSockets, Message Queue, ELT, SSH',
+    link: '',
+  },
+  {
+    name: 'Languages',
+    description: 'JS, Ruby, PHP, Familiar with - Go, Python, Typescript, Java, C#',
+    link: '',
+  },
+  {
+    name: 'Frontend',
+    description:
+      'React.js, Context API, Hooks, Redux, Familiar with -  Next.js, Tailwind CSS, SASS',
+    link: '',
+  },
+  {
+    name: 'Frameworks',
+    description: 'Express, Node.js, RoR, Familiar with - Flask, FastAPI, Nest.js',
     link: '',
   },
   {
     name: 'Databases',
-    description: 'MySql, PostgreSQL, MongoDB',
+    description: 'MongoDB, MySQL, Postgres, Redis, MSSQL, SQLite',
     link: '',
   },
   {
-    name: 'Other Techs',
-    description:
-      'Docker (familiar), Kubernetes (basics), AWS (prior-experience), Microservices - API design (familiar), CI / CD, Agile / Scrum  (prior-experience)',
+    name: 'AI',
+    description: 'LLMs, Google Document and Vision AI, AWS Rekognition, OpenAI Models, LangChain, LangSmith, PortKey',
+    link: '',
+  },
+  {
+    name: 'Infra & Cloud',
+    description: 'Docker, Kubernetes, AWS (EKS, CloudFormation, Lambda, EC2, RDS, Redis, S3, SNS, Kinesis, Athena, Load Balancer), Familar with - GCP, Azure',
     link: '',
   },
 ];
 
 export const aboutMe: string =
-  'I live in Sydney, Australia and actively looking for new oppurtunities. After having worked for more than two years in US Healthcare Data Analytics company (Cotiviti Nepal) and as Full Stack web developer at Core Intelligence, I’m looking forward to applying my knowledge and experience. My favoured technologies right now are: React.js, Typescript, Python, Flask, Node.js, Express.js, GraphQL and PostgreSQL.';
+  'I enjoy building software that’s reliable, scalable, and enhanced by AI — solving real-world problems through thoughtful engineering and collaboration. I thrive in teams that share ideas openly, move fast, and care deeply about quality. With a strong focus on reliability and security, I approach every initiative as an opportunity to learn, innovate, and create lasting impact.';
 export const fullName: string = 'Sarthak Joshi';
 export const userExcerpt: string =
-  'Full Stack Developer, passionate about frontend & backend technologies.';
+  'Full Stack Engineer';
