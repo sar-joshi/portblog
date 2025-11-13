@@ -7,10 +7,10 @@ import prism from 'remark-prism';
 
 const postsDirectory = path.join(process.cwd(), 'src/_posts');
 
-export function getSortedPostsData() {
+export function getSortedPostsData(limit: number = 3) {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
+  const allPostsData = fileNames.slice(0, limit).map((fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '');
 
