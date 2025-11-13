@@ -13,9 +13,9 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <SectionAbout about={aboutMe} />
-      <SectionProjects projects={projects} />
       <SectionExperience experience={experience} />
       <SectionSkills skills={skills} />
+      <SectionProjects projects={projects} />
       {allPostsData?.length > 0 ? (
         <SectionBlogPosts blogPosts={allPostsData} />
       ) : null}
