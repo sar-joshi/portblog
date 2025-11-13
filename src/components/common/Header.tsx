@@ -5,7 +5,7 @@ import IUserInfo from '../../interfaces/IUserInfo';
 const classes = {
   wrapper: 'block mb-6 md:flex',
   imageWrapper:
-    'w-full max-w-150 h-150 min-h-full bg-gray-300 overflow-hidden rounded-full',
+    'block w-full max-w-[150px] h-[150px] min-h-full bg-gray-300 overflow-hidden rounded-full',
   image:
     'object-fit transition duration-500 ease-in-out transform hover:scale-105',
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
@@ -31,19 +31,19 @@ export default function Header({
 }) {
   return (
     <div className={classes.wrapper}>
-      <div className={classes.imageWrapper}>
-        <Link href="/">
-          <img
-            className={classes.image}
-            src="/images/mero_profile_picture.jpg"
-            alt={userInfo.name}
-            title="Profile Image"
-          />
-        </Link>
-      </div>
+      <Link href="/" className={classes.imageWrapper}>
+        <img
+          className={classes.image}
+          src="/images/mero_profile_picture.jpg"
+          alt={userInfo.name}
+          title="Profile Image"
+        />
+      </Link>
       <div className={classes.contentWrapper}>
         <h1 className={classes.name}>
-          <Link href="/">{userInfo.name}</Link>
+          <Link href="/" className="hover:underline">
+            {userInfo.name}
+          </Link>
         </h1>
         <p className={classes.description}>{userInfo.excerpt}</p>
         <ul className={classes.list}>
@@ -70,8 +70,8 @@ export default function Header({
           )}
           {!noBlog && (
             <li className={classes.item}>
-              <Link href="/blog">
-                <a className={classes.link}>Blog</a>
+              <Link href="/blog" className={classes.link}>
+                Blog
               </Link>
             </li>
           )}

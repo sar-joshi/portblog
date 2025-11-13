@@ -12,9 +12,11 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url: URL) => {
+    const handleRouteChange = (url: string) => {
       /* invoke analytics function only for production */
-      if (isProduction) gtag.pageview(url);
+      if (isProduction && typeof window !== 'undefined') {
+        gtag.pageview(url);
+      }
     };
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {

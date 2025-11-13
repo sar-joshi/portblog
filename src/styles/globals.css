@@ -50,22 +50,6 @@
   }
 }
 
-@layer utilities {
-  @responsive {
-    .max-w-150 {
-      max-width: 150px;
-    }
-
-    .top-5 {
-      top: 5%;
-    }
-  }
-
-  .h-150 {
-    height: 150px;
-  }
-}
-
 /* BLog Content - Markdown */
 .blog-content {
   @apply text-gray-600;
