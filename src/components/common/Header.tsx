@@ -18,8 +18,8 @@ const classes = {
     'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black dark:text-gray-200 lg:dark:hover:text-green-500',
 };
 
-const twitter = 'https://twitter.com/sarthakvox';
-const github = 'https://github.com/iamsarthakjoshi';
+const twitter = null;
+const github = 'https://github.com/sar-joshi';
 const linkedin = 'https://www.linkedin.com/in/joshisarthak';
 
 export default function Header({
