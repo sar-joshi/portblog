@@ -13,6 +13,7 @@ export default function SectionSkills({ skills }: { skills: ISkill[] }) {
           name={item.name}
           description={item.description}
           link={item.link}
+          enableHover={true}
         />
       ))}
     </Section>

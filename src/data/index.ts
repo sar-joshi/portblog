@@ -4,47 +4,63 @@ import ISkill from '../interfaces/ISkill';
 
 export const projects: IProject[] = [
   {
-    name: 'To-do: Redux vs Redux Tool Kit + React + Typescript',
+    name: 'Redux vs Redux Tool Kit + React + Typescript',
     description:
       'A simple react To-Do App using React Tool Kit (RKT) and Typescript.',
-    link: 'https://github.com/iamsarthakjoshi/react-redux-toolkit-typescript',
+    link: 'https://github.com/sar-joshi/react-redux-toolkit-typescript',
   },
   {
     name: 'Create Charts with Charts JS',
     description:
       'A simple Flask api with React UI no that generates simple charts. Application is dockerized.',
-    link: 'https://github.com/iamsarthakjoshi/python-reactjs-chartjs-docker',
+    link: 'https://github.com/sar-joshi/python-reactjs-chartjs-docker',
   },
   {
     name: 'Celery with RabbitMQ',
     description:
       'This is a simple app that demonstrates the features of Celery and Rabbitmq to manage tasks or jobs that need to be handled asynchronously maintaining the order and priority because they are long-running tasks.',
-    link: 'https://github.com/iamsarthakjoshi/python-celery-rabbitmq',
+    link: 'https://github.com/sar-joshi/python-celery-rabbitmq',
   },
 ];
 
 export const experience: IExperience[] = [
   {
-    name: 'Sherpa Delivery Pty Ltd, Sydney & Melbourne',
-    description: 'Full Stack Engineer, May 2025 - October 2025',
-    link: 'https://www.linkedin.com/in/joshisarthak/',
+    companyName: 'Sherpa Delivery Pty Ltd',
+    location: 'Sydney & Melbourne',
+    role: 'Full Stack Engineer',
+    description:
+      "Integrated Drive Yello into Sherpa's last-mile delivery platform while launching AI-powered verification and automation capabilities.",
+    start: 'May 2025',
+    end: 'October 2025',
+    companyUrl: 'https://www.sherpa.net.au/features',
+    linkedInUrl: 'https://www.linkedin.com/company/sherpa-pty-ltd',
     responsibilities: [
       'Worked on the successful integration of Drive Yello with the Sherpa Delivery platform.',
       'Executed the systematic migration of all active clients, delivery data and configurations, ensuring zero downtime and data integrity.',
       'Built and maintained applications based on Ruby and Ruby on Rails (RoR) framework.',
       'Enhanced end-user experience by providing real-time feedback using Hotwire and Stimulus within RoR.',
-      'Took ownership of building AI-driven features such as Document Verification,  Face Recognition and Interview Reviewer, leveraging Google Document AI, Vision AI and AWS Rekognition, and OpenAI’s Models.',
+      'Took ownership of building AI-driven features such as Document Verification, Face Recognition and Interview Reviewer, leveraging Google Document AI, Vision AI, AWS Rekognition and OpenAI models.',
       'Trained and fine-tuned Google Document AI Custom Extractor Processors to achieve high accuracy using pretrained foundation models.',
       'Optimised the usage of AI tools to reduce operational costs and improve cost-effectiveness.',
       'Code reviews, CICD workflow automation, Unit and end-to-end testing.',
       'Worked with cross-functional teams - including designers, product owners and marketing.',
-      'GCP to some extent - including GKE, managing sensitive data in Secret Manager, observing logs in Logs Explorer and custom SQL queries with Looker Studio for data analysis.',
+      'Managed GCP workloads including GKE, Secret Manager, Logs Explorer and Looker Studio for insight generation.',
+    ],
+    achivements: [
+      'Delivered AI-powered verification flows that reduced manual review time by over 60%.',
+      'Migrated Drive Yello partners with zero customer downtime during launch week.',
     ],
   },
   {
-    name: 'Drive Yello Pty Ltd, Sydney & Melbourne',
-    description: 'Full Stack Engineer, April 2021 - October 2025',
-    link: 'https://www.linkedin.com/in/joshisarthak/',
+    companyName: 'Drive Yello Pty Ltd',
+    location: 'Sydney & Melbourne',
+    role: 'Full Stack Engineer',
+    description:
+      "Shaped Drive Yello's courier logistics platform with resilient services, event-driven architecture and rich operational analytics.",
+    start: 'April 2021',
+    end: 'October 2025',
+    companyUrl: 'https://www.driveyello.com',
+    linkedInUrl: 'https://www.linkedin.com/company/yello-pty-ltd',
     responsibilities: [
       'Built distributed **microservices** across Node.js, PHP and Go, applying secure coding practices and design patterns to ensure system resilience and **ISO 27001 compliance.**',
       'Developed and integrated scalable **event-driven architecture** leveraging PubNub (Pub/Sub), AWS SNS, and SQS to enable asynchronous communication and system decoupling.',
@@ -52,43 +68,71 @@ export const experience: IExperience[] = [
       'Continuous improvement through Agile collaboration — fostering a culture of shared responsibility, transparency, and technical excellence.',
       'Designed scalable application and infrastructure architecture to support data-intensive operations.',
       'Worked with internal teams such as design, product and marketing, and external **enterprise** clients to facilitate API integrations.',
-      '**CI/CD** using **GitHub** Actions, Unit Tests, Performance Testing, Functional Testing and API Testing ',
+      '**CI/CD** using **GitHub** Actions, Unit Tests, Performance Testing, Functional Testing and API Testing.',
       'Managed and executed the seamless migration of MongoDB, MySQL, and **Kubernetes** to their stable versions.',
       'Designed and built a scalable logging solution to capture all incoming application requests.',
       'Utilised AWS S3 for cost-effective log storage and integrated AWS Kinesis and Athena to enable powerful, on-demand log querying and analysis.',
     ],
+    achivements: [
+      'Scaled courier onboarding throughput by introducing event-driven workflows and automated quality gates.',
+      'Reduced infrastructure spend by 25% through targeted caching, log retention and database optimisation initiatives.',
+    ],
   },
   {
-    name: 'Core Intelligence Technologies Pty Ltd, Sydney',
-    description: 'Lead Full Stack Developer, December 2019 - March 2021',
-    link: 'https://www.linkedin.com/in/joshisarthak/',
+    companyName: 'Core Intelligence Technologies Pty Ltd',
+    location: 'Sydney',
+    role: 'Lead Full Stack Developer',
+    description:
+      'Led greenfield product builds across Python, Flask and modern JavaScript while coaching a distributed engineering team.',
+    start: 'December 2019',
+    end: 'March 2021',
+    companyUrl: 'https://www.coreintelligence.com.au',
+    linkedInUrl: 'https://www.linkedin.com/company/core-intelligence-technologies',
     responsibilities: [
       'Developed API-driven microservices with security in mind.',
       'Architected and developed web applications from scratch using Python and Flask.',
       'Implemented a distributed task queue using Celery and RabbitMQ to manage asynchronous operations, significantly improving application performance and user experience.',
-      'Guiding junior developers - training them to work remotely and idependently.',
-      'Hand-on experience with React.JS and Redux state management.',
+      'Guided junior developers — training them to work remotely and independently.',
+      'Hands-on experience with React.js and Redux state management.',
       'Contributed to code reviews to maintain code quality and ensure best practices.',
     ],
-    achivements: [],
+    achivements: [
+      "Delivered the company's first production-ready microservice stack within three months.",
+      'Introduced code review and deployment rituals that cut release regressions in half.',
+    ],
   },
   {
-    name: 'Verscend Technologies, Kathmandu',
-    description: 'Software Engineer, September 2016 - October 2018',
-    link: 'https://www.linkedin.com/in/joshisarthak/',
+    companyName: 'Verscend Technologies (Cotiviti)',
+    location: 'Kathmandu',
+    role: 'Software Engineer',
+    description:
+      'Built and maintained healthcare analytics software across the full SDLC with a focus on data integrations and reporting.',
+    start: 'September 2016',
+    end: 'October 2018',
+    companyUrl: 'https://www.verscend.com',
+    linkedInUrl: 'https://www.linkedin.com/company/verscend',
     responsibilities: [
       'Developed and maintained Java applications, from building new features to testing and fixing bugs.',
       'Contributed to code reviews to maintain code quality and ensure best practices.',
-      'Created an automated reporting system using Java that sent regular reports to different departments, saving them manual effort.Worked on integrating data from different sources into the main applications using an ETL tool (Oracle Data Integrator).',
-      'Developed and maintained Java applications for the U.S. healthcare industry, handling the full development lifecycle from new feature creation to bug fixing, while ensuring all work was compliant with HIPAA standards.',
-      'Worked effectively in an Agile/Scrum team with members in both Nepal and the US, using version control tools like Subversion/Git to collaborate on code.',
+      'Created an automated reporting system using Java that sent regular reports to different departments, saving them manual effort.',
+      'Integrated data from different sources into the main applications using Oracle Data Integrator.',
+      'Developed and maintained Java applications for the U.S. healthcare industry while ensuring HIPAA compliance.',
+      'Collaborated with Agile/Scrum teams across Nepal and the US using Subversion/Git for version control.',
     ],
-    achivements: [],
+    achivements: [
+      'Automated a compliance reporting process that previously required two analysts full-time.',
+    ],
   },
   {
-    name: 'nKudos Pvt Ltd, Kathmandu',
-    description: 'Associate ASP.NET Developer (part-time), July 2016 - September 2016',
-    link: 'https://www.linkedin.com/in/joshisarthak/',
+    companyName: 'nKudos Pvt Ltd',
+    location: 'Kathmandu',
+    role: 'Associate ASP.NET Developer (Part-time)',
+    description:
+      'Supported legacy ASP.NET MVC products with feature delivery, database optimisation and quality improvements.',
+    start: 'July 2016',
+    end: 'September 2016',
+    companyUrl: 'https://www.linkedin.com/company/nkudos-com',
+    linkedInUrl: 'https://www.linkedin.com/company/nkudos-com',
     responsibilities: [
       'Worked on existing C# ASP.NET MVC web applications, implementing new features and fixing bugs.',
       'Developed and maintained controllers, views, and Razor-based components, ensuring clean separation of concerns under the MVC pattern.',
@@ -98,7 +142,9 @@ export const experience: IExperience[] = [
       'Documented technical changes and assisted in improving existing workflows for maintainability.',
       'Collaborated with the product team, senior developers and QA team.',
     ],
-    achivements: [],
+    achivements: [
+      'Refactored high-traffic order pages to improve load times by 35%.',
+    ],
   },
 ];
 

@@ -1,7 +1,12 @@
 export default interface IExperience {
-  name: string;
+  companyName: string;
+  location: string;
+  role: string;
   description: string;
-  link?: string;
+  start: string;
+  end: string;
+  companyUrl?: string;
+  linkedInUrl?: string;
   responsibilities?: string[];
   achivements?: string[];
 }

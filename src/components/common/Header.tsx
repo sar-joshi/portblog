@@ -10,7 +10,7 @@ const classes = {
     'object-fit transition duration-500 ease-in-out transform hover:scale-105',
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
   name:
-    'text-5xl text-gray-900 font-bold leading-tight hover:text-black dark:text-gray-100 lg:dark:hover:text-green-500',
+    'text-5xl text-gray-900 font-bold leading-tight dark:text-gray-100',
   description: 'text-gray-600 dark:text-gray-300',
   list: 'mt-6 uppercase tracking-wider',
   item: 'inline list-none pr-4',
@@ -41,9 +41,7 @@ export default function Header({
       </Link>
       <div className={classes.contentWrapper}>
         <h1 className={classes.name}>
-          <Link href="/" className="hover:underline">
             {userInfo.name}
-          </Link>
         </h1>
         <p className={classes.description}>{userInfo.excerpt}</p>
         <ul className={classes.list}>
