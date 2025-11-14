@@ -15,6 +15,7 @@ export default function SectionBlogPosts({ blogPosts }: { blogPosts: any }) {
           name={title}
           description={<DateFormatter date={date} prefix={'Posted on'} />}
           link={`/posts/${id}`}
+          enableHover={true}
         />
       ))}
       {blogPosts.length >= 5 && (

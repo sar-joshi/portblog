@@ -17,6 +17,7 @@ export default function SectionProjects({
           name={project.name}
           description={project.description}
           link={project.link}
+          enableHover={true}
         />
       ))}
     </Section>

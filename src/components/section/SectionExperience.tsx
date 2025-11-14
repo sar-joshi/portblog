@@ -1,4 +1,4 @@
-import SummaryItem from '../common/SummaryItem';
+import ExperienceItem from '../common/ExperienceItem';
 import Section from './Section';
 import IExperience from '../../interfaces/IExperience';
 
@@ -12,12 +12,7 @@ export default function SectionExperience({
   return (
     <Section title="Experience">
       {experience.map((item: IExperience) => (
-        <SummaryItem
-          key={item.name}
-          name={item.name}
-          description={item.description}
-          link={item.link}
-        />
+        <ExperienceItem key={`${item.companyName}-${item.start}`} experience={item} />
       ))}
     </Section>
   );
